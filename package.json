@@ -1,0 +1,15 @@
+{
+  "name": "teste-ebac-ui",
+  "version": "1.0.0",
+  "description": "Repositorio para guardar os primeiros testes em cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "e2e"
+  },
+  "repository": {
+    "type": "git",
+    "url": "teste-ebac-ui"
+  },
+  "author": "spanol",
+  "license": "ISC"
+}
