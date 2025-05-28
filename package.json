@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Repositorio para guardar os primeiros testes em cypress",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "teste-ebac-ui"
@@ -13,5 +12,8 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.6.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.8.0"
   }
 }
