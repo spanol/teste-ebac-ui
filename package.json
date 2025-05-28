@@ -4,12 +4,14 @@
   "description": "Repositorio para guardar os primeiros testes em cypress",
   "main": "index.js",
   "scripts": {
-    "test": "e2e"
   },
   "repository": {
     "type": "git",
     "url": "teste-ebac-ui"
   },
   "author": "spanol",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^13.6.0"
+  }
 }
