@@ -13,9 +13,7 @@ describe("Funcionalidade: Registro", () => {
     const email = faker.internet.email().toLocaleLowerCase();
     const password = faker.internet.password();
     const username = email.split("@")[0];
-    cy.get("#reg_email").type(email);
-    cy.get("#reg_password").type(password);
-    cy.get(".form-group > .button").click();
+    cy.register(email, password);
     cy.get(".woocommerce-MyAccount-content").should(
       "contain",
       `Olá, ${username}`
@@ -25,9 +23,7 @@ describe("Funcionalidade: Registro", () => {
   it("Deve exibir mensagem de erro ao inserir usuário já cadastrado", () => {
     const email = "usuariosupermisterioso@teste.com";
     const password = "senha1234@4321";
-    cy.get("#reg_email").type(email);
-    cy.get("#reg_password").type(password);
-    cy.get(".form-group > .button").click();
+    cy.register(email, password);
     cy.get(".woocommerce-error > li").should(
       "contain",
       "Uma conta já está registrada com seu endereço de e-mail."
